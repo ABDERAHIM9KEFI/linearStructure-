@@ -1,0 +1,13 @@
+/*given two sets of integers, write also two algorithms to print the sum of overlapping elements in two sets. The elements in each set are unique or there are no duplicates within a set.
+Example:
+Set 1: [12, 13, 6, 10]
+Set 2: [13, 10, 16, 15]
+Sum of overlapping elements: 46
+Explanation: Common elements are 10, 13*/
+
+ALGORITHM sum_of_overlapping_elements
+VAR
+  
+BEGIN
+  set_instructions
+END

@@ -1,0 +1,29 @@
+/*Given two sets of elements, find the sum of all distinct elements from the set. In other words, find the sum of all elements which are present in either of the given set. 
+Example:
+Set 1 : [3, 1, 7, 9], Set 2: [2, 4, 1, 9, 3]
+Output: 13 (distinct elements - 4, 7, 2 )
+Give two Solution to this problem, using a different type of data structures each time.*/
+
+ALGORITHM find_the_sum_of_distinct_elements
+VAR
+  tab1: ARRAY_OF INTEGER[10]; 
+  tab2: ARRAY_OF INTEGER[10];
+  i:  INTEGER := 0;
+  j:  INTEGER := 0;
+  sum:  INTEGER := 0;
+  verif :  BOOLEAN := false;
+  
+BEGIN
+  read (tab1[i])
+  read (tab2[j])
+  FOR i FROM 0 TO length-1 DO
+    IF (verif = false) THEN
+      sum := sum + tab[i-1]
+    END_IF
+    FOR j FROM 0 TO length-1 DO
+     IF (tab1[i]=tab2[j]) THEN
+      verif =true ;
+    END_IF 
+    END_FOR
+  END_FOR
+END
